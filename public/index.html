@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bob's Burgers Checklist</title>
+    <meta charset="UTF-8" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center" id="top-bar">
+                <img src="/assets/images/bburgers.jpg" width="500px;" alt="burger" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="width: 100%;">
+            <div class="col-lg-4 text-center enter_section">
+                <img src="/assets/images/bburger.png" width="200px;" alt="burger" />
+                <p>Enter a burger from Bob's Burgers you've always wanted to eat & click the "Submit" button.</p>
+                <form class="add-burger">
+                    <input type="text" class="form-control" name="burger_name" value="" id="burger_name" />
+                    <button type="submit" class="btn btn-primary" id="text-enter-button">
+                        Submit
+                    </button>
+                </form>
+            </div>
+            <div class="col-lg-4" class="task" id="not_devoured">
+                <h1 style="text-align:center;">Burgers to eat:</h1>
+            </div>
+            <div class="col-lg-4" class="task" id="devoured">
+                <h1 style="text-align:center;">Devoured:</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/burgers.js"></script>
+</body>
+
+</html>
